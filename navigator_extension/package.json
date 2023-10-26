@@ -1,0 +1,24 @@
+{
+  "name": "inka",
+  "version": "1.0.0",
+  "description": "Job Hunt, simplified",
+  "main": "index.js",
+  "author": "imloreno",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack --watch --progress --config webpack.config.js",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
