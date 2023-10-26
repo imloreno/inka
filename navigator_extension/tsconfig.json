@@ -12,5 +12,12 @@
    ],
    "exclude": [
       "node_modules"
-   ]
+   ],
+   // alias routes
+   "baseUrl": "./src",
+   "paths": {
+      "@popup/*": [
+         "src/popup/*"
+      ],
+   }
 }
