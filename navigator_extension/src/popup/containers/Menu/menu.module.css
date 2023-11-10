@@ -1,0 +1,20 @@
+.menuList {
+  width: fit-content;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--txt1);
+  background-color: var(--txt2);
+}
+
+.menuLink {
+  all: unset;
+  margin: 0 0.7rem;
+  cursor: pointer;
+}

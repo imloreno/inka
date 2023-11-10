@@ -1,37 +1,41 @@
 @font-face {
-  font-family: monserrat;
-  src: url(./assets/monserrat.ttf);
+  font-family: inter;
+  src: url(./assets/inter.ttf);
 }
 
 :root {
-  font-family: monserrat, sans-serif;
+  font-family: inter, sans-serif;
   --primary: #1e1e27;
-  --secondary: #d5ef9a;
+  --secondary: #2b2b37;
   --txt1: #f5f5f5;
   --txt2: #ffd789;
+  --txt3: #8e8e8e;
+
+  --size1: 1.8rem;
 }
 
 body {
-  height: 550px;
-  aspect-ratio: 2/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 600px;
+  width: 400px;
   margin: 0;
   padding: 0.7rem;
+  font-size: 1rem;
   box-sizing: border-box;
-  background-color: black;
-}
-
-#body {
   background-color: var(--primary);
   color: var(--txt1);
-  border-radius: 0.8rem;
-  margin: 0;
-  padding: 0.5rem;
-  height: 100%;
 }
 
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+}
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 main {
   display: block;
@@ -39,6 +43,11 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
 }
 p {
   margin: 0;
@@ -90,7 +99,6 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
-  font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
@@ -101,12 +109,6 @@ input {
 button,
 select {
   text-transform: none;
-}
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
 }
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -146,10 +148,6 @@ textarea {
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
-}
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
 }
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;

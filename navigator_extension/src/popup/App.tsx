@@ -1,12 +1,15 @@
 import React from "react";
+import { Router } from "./routes";
+import { BaseLayout } from "./components";
 import "@popup/app.css";
+import Header from "./containers/Header";
 
 const App = () => {
   return (
-    <div id="body">
-      <p className="t1">Lorem ipsum dolor sit amet.</p>
-      <p className="t2">Lorem ipsum dolor sit amet.</p>
-    </div>
+    <BaseLayout>
+      <Header />
+      <Router />
+    </BaseLayout>
   );
 };
 

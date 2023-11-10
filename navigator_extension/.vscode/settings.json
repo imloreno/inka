@@ -1,0 +1,12 @@
+{
+   "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+   "editor.guides.bracketPairs": "active",
+   "editor.language.colorizedBracketPairs": [],
+   "editor.autoClosingBrackets": "languageDefined",
+   "editor.bracketPairColorization.enabled": true,
+   "editor.guides.bracketPairsHorizontal": "active",
+   "editor.guides.highlightActiveBracketPair": false,
+   "workbench.colorCustomizations": {},
+   "editor.autoIndent": "brackets",
+   "workbench.tree.renderIndentGuides": "always",
+}

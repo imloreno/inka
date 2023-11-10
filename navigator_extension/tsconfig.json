@@ -1,14 +1,15 @@
 {
    "compilerOptions": {
       "jsx": "react",
-      "module": "es6",
       "target": "es6",
+      "module": "esnext",
       "moduleResolution": "node",
       "esModuleInterop": true
    },
    "include": [
       "./src/**/*.ts",
       "./src/**/*.tsx",
+      "./declaration.d.ts"
    ],
    "exclude": [
       "node_modules"

@@ -1,0 +1,24 @@
+.box {
+  display: flex;
+  align-items: center;
+  min-height: var(--size1);
+  min-width: var(--size1);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--secondary);
+}
+
+.isContainer {
+  padding: 0;
+}
+
+.isIcon {
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.isIcon:hover {
+  background-color: var(--secondary);
+}

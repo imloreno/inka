@@ -10,9 +10,13 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "global": "^4.4.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
