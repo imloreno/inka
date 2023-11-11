@@ -4,7 +4,8 @@
   min-height: var(--size1);
   min-width: var(--size1);
   padding: 0.5rem;
-  border-radius: 1rem;
+  height: 2.1rem;
+  border-radius: 1.1rem;
   overflow: hidden;
   background-color: var(--secondary);
 }
@@ -17,8 +18,27 @@
   justify-content: center;
   background-color: transparent;
   cursor: pointer;
+  width: 2.1rem;
+  height: 2.1rem;
+  font-size: 1.4rem;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  background-color: var(--secondary);
 }
 
 .isIcon:hover {
-  background-color: var(--secondary);
+  color: var(--txt2);
+  background-color: var(--highlight);
+}
+
+.isNavLink {
+  all: unset;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+  padding-top: 0.55rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.autoHeight {
+  height: auto !important;
 }

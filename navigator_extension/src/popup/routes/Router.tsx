@@ -5,7 +5,7 @@ import { Home, Login } from "../pages";
 export const routes = [
   {
     path: "/",
-    label: "Builder",
+    label: "Build",
   },
   {
     path: "/history",

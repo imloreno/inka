@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./profile_info.module.css";
-import { Box, Icons } from "../";
+import { Box, H2, Icons } from "../";
 
 const ProfileInfo = () => {
   return (
@@ -13,8 +13,8 @@ const ProfileInfo = () => {
           />
         </div>
         <div className={styles.textContainer}>
-          <h2>Ricardo Orellana</h2>
-          <p>Frontend engineer +3y | Reac... </p>
+          <H2>RICARDO ORELLANA</H2>
+          <p>Frontend engineer +3y | React.js | TypeScri... </p>
         </div>
       </div>
       <Box boxType="icon" containerMode>

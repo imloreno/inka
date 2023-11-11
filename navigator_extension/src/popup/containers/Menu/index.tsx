@@ -1,43 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Box } from "../../components";
-import styles from "./menu.module.css";
 import useMenu from "./hooks/useMenu";
 import { routes } from "../../routes/Router";
+import styles from "./menu.module.css";
 
 const Menu = () => {
-  const { picked, width, left } = useMenu();
-
-  const classBuilder = ({ isActive }) => {
-    // if (picked === null) {
-    //   const left =
-    //     defaultItem.current.getBoundingClientRect().left -
-    //     defaultItem.current.parentNode.getBoundingClientRect().left;
-    //   setPicked({
-    //     width: defaultItem.current.offsetWidth,
-    //     left,
-    //     picked: 0,
-    //   });
-    // }
-    return `${styles.menuLink} ${
-      isActive ? styles.menuLinkActive : styles.menuLink
-    }`;
-  };
+  const { picked, width, left, handleClick } = useMenu();
 
   return (
     <Box
       className={styles.menuList}
-      containerMode
       id="menuContainer"
+      containerMode
     >
       {routes.map(({ path, label }, index) => (
-        <Box key={path + index}>
-          <NavLink className={classBuilder} to={path}>
-            {label}
-          </NavLink>
+        <Box
+          onClick={(e) => handleClick(e, index)}
+          key={path + index}
+          boxType="navLink"
+          className={`${styles.menuLink} ${picked === index && styles.linkActive}`}
+          to={path}
+        >
+          {label}
         </Box>
       ))}
-      <Box style={{ width, left }} />
+      <Box style={{ width, left }} className={styles.menuSelected} containerMode />
     </Box>
   );
 };

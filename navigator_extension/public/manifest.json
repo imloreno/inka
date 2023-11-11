@@ -4,9 +4,10 @@
    "description": "Job Hunt, Simplified",
    "version": "1.0.0",
    "icons": {
-      "16": "icon.jpg",
-      "48": "icon.jpg",
-      "128": "icon.jpg"
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
    },
    "action": {
       "default_title": "Inka Jobs",

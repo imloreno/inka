@@ -1,0 +1,33 @@
+.infoContainer {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  column-gap: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.header:hover {
+  background-color: var(--highlight);
+}
+
+.icon {
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.arrow {
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+}
+.arrowActive {
+  transform: rotate(90deg);
+}
+
+.content {
+  display: none;
+}

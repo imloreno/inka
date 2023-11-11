@@ -38,7 +38,7 @@ module.exports = {
           to: path.resolve("dist"),
         },
         {
-          from: path.resolve("public/icon.jpg"),
+          from: path.resolve("public/icon.png"),
           to: path.resolve("dist"),
         },
       ],

@@ -1,5 +1,8 @@
 .menuList {
+  position: relative;
   width: fit-content;
+  margin-bottom: 1rem;
+  user-select: none;
 }
 
 .menuItem {
@@ -14,7 +17,24 @@
 }
 
 .menuLink {
-  all: unset;
-  margin: 0 0.7rem;
-  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  transition-delay: .2s;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: var(--size2);
+}
+
+.linkActive {
+  color: var(--primary);
+}
+
+.menuSelected {
+  position: absolute;
+  background-color: var(--txt2);
+  top: 0;
+  left: 100 !important;
+  bottom: 0;
+  z-index: 0;
+  transition: width 0.5s ease-out,
+    left 0.5s cubic-bezier(0.85, -0.7, 0.19, 1.7);
 }
